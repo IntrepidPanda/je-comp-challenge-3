@@ -23,6 +23,7 @@ body {
 .site-nav {
   background-color: rgb(40, 49, 64);
   grid-area: siteNav;
+  overflow: scroll;
 }
 
 .page-nav {
@@ -33,6 +34,7 @@ body {
 .page-content {
   background-color: rgb(231, 239, 244);
   grid-area: pageContent;
+  overflow: scroll;
 }
 
 /*==========[END TV STYLES]==========*/
@@ -40,16 +42,49 @@ body {
 
 
 /*==========[START DESKTOP STYLES]==========*/
+
+@media screen and (max-width: 1440px) {
+
+  body {
+    grid-template: 'siteNav pageNav' 2fr
+                   'siteNav pageContent' 5fr
+                   / 240px 1fr;
+  }
+
+}
+
 /*==========[END DESKTOP STYLES]==========*/
 
 
 
 /*==========[START TABLET STYLES]==========*/
+
+@media screen and (max-width: 1000px) {
+
+  body {
+    grid-template: 'pageNav' 2fr
+                   'pageContent' 5fr
+                   / 1fr;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+}
+
 /*==========[END TABLET STYLES]==========*/
 
 
 
 /*==========[START MOBILE STYLES]==========*/
+
+@media screen and (max-width: 500px) {
+
+
+
+}
+
 /*==========[END MOBILE STYLES]==========*/
 
 
