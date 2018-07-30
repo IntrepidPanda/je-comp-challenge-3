@@ -1,0 +1,60 @@
+/*==========[BLANKET STYLES]==========*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*==========[BLANKET STYLES]==========*/
+
+
+
+/*==========[START TV STYLES]==========*/
+
+body {
+  background-color: rgb(58, 88, 105);
+  display: grid;
+  grid-template: 'siteNav pageNav' 330px
+                 'siteNav pageContent' 1fr
+                 / 240px 1200px;
+  justify-content: center;
+  height: 100vh;
+}
+
+.site-nav {
+  background-color: rgb(40, 49, 64);
+  grid-area: siteNav;
+}
+
+.page-nav {
+  background-color: rgb(255, 255, 255);
+  grid-area: pageNav;
+}
+
+.page-content {
+  background-color: rgb(231, 239, 244);
+  grid-area: pageContent;
+}
+
+/*==========[END TV STYLES]==========*/
+
+
+
+/*==========[START DESKTOP STYLES]==========*/
+/*==========[END DESKTOP STYLES]==========*/
+
+
+
+/*==========[START TABLET STYLES]==========*/
+/*==========[END TABLET STYLES]==========*/
+
+
+
+/*==========[START MOBILE STYLES]==========*/
+/*==========[END MOBILE STYLES]==========*/
+
+
+
+/*==========[EXTRA STYLE COMMENT TAGS]==========*/
+/*==========[]==========*/
+/*==========[]==========*/
+/*==========[EXTRA STYLE COMMENT TAGS]==========*/
