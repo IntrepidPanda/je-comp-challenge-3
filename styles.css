@@ -46,8 +46,8 @@ body {
 @media screen and (max-width: 1440px) {
 
   body {
-    grid-template: 'siteNav pageNav' 2fr
-                   'siteNav pageContent' 5fr
+    grid-template: 'siteNav pageNav' 330px
+                   'siteNav pageContent' 1fr
                    / 240px 1fr;
   }
 
@@ -62,8 +62,8 @@ body {
 @media screen and (max-width: 1000px) {
 
   body {
-    grid-template: 'pageNav' 2fr
-                   'pageContent' 5fr
+    grid-template: 'pageNav' 330px
+                   'pageContent' 1fr
                    / 1fr;
   }
 
@@ -81,7 +81,11 @@ body {
 
 @media screen and (max-width: 500px) {
 
-
+  body {
+    grid-template: 'pageNav' 1fr
+                   'pageContent' 3fr
+                   / 1fr;
+  }
 
 }
 
