@@ -38,7 +38,7 @@ body {
 
 .other-navs {
   grid-area: other-navs;
-  
+
   grid-template: 'main-nav' auto
                  'admin-nav' auto
                  'category-filter' auto
@@ -63,16 +63,44 @@ body {
 
 /*==========[END SITE NAVIGATION STYLES]==========*/
 
+/*==========[START PAGE NAVIGATION STYLES]==========*/
+
 .page-nav {
   background-color: rgb(255, 255, 255);
   grid-area: page-nav;
+
+  grid-template: 'search-nav' auto
+                 'page-header' auto
+                 'content-tabs' auto
+                 / 1fr;
 }
+
+.search-nav {
+  grid-area: search-nav;
+  height: 100px;
+}
+
+.page-header {
+  grid-area: page-header;
+  height: 180px;
+}
+
+.content-tabs {
+  grid-area: content-tabs;
+  height: 50px;
+}
+
+/*==========[END PAGE NAVIGATION STYLES]==========*/
+
+/*==========[START PAGE CONTENT STYLES]==========*/
 
 .page-content {
   background-color: rgb(231, 239, 244);
   grid-area: page-content;
   overflow: scroll;
 }
+
+/*==========[END PAGE CONTENT STYLES]==========*/
 
 /*==========[END TV STYLES]==========*/
 
