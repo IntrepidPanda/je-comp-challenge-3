@@ -13,27 +13,64 @@
 body {
   background-color: rgb(58, 88, 105);
   display: grid;
-  grid-template: 'siteNav pageNav' 330px
-                 'siteNav pageContent' 1fr
+  grid-template: 'site-nav page-nav' 330px
+                 'site-nav page-content' 1fr
                  / 240px 1200px;
   justify-content: center;
   height: 100vh;
 }
 
+/*==========[START SITE NAVIGATION STYLES]==========*/
+
 .site-nav {
   background-color: rgb(40, 49, 64);
-  grid-area: siteNav;
+  grid-area: site-nav;
+
+  display: grid;
+  grid-template: 'profile-nav' 240px
+                 'other-navs' 1fr
+                 / 1fr;
+}
+
+.profile-nav {
+  grid-area: profile-nav;
+}
+
+.other-navs {
+  grid-area: other-navs;
+  
+  grid-template: 'main-nav' auto
+                 'admin-nav' auto
+                 'category-filter' auto
+                 / 1fr;
   overflow: scroll;
 }
 
+.main-nav {
+  grid-area: main-nav;
+  height: 360px;
+}
+
+.admin-nav {
+  grid-area: admin-nav;
+  height: 360px;
+}
+
+.category-filter {
+  grid-area: category-filter;
+  height: 360px;
+}
+
+/*==========[END SITE NAVIGATION STYLES]==========*/
+
 .page-nav {
   background-color: rgb(255, 255, 255);
-  grid-area: pageNav;
+  grid-area: page-nav;
 }
 
 .page-content {
   background-color: rgb(231, 239, 244);
-  grid-area: pageContent;
+  grid-area: page-content;
   overflow: scroll;
 }
 
@@ -46,8 +83,8 @@ body {
 @media screen and (max-width: 1440px) {
 
   body {
-    grid-template: 'siteNav pageNav' 330px
-                   'siteNav pageContent' 1fr
+    grid-template: 'site-nav page-nav' 330px
+                   'site-nav page-content' 1fr
                    / 240px 1fr;
   }
 
@@ -62,8 +99,8 @@ body {
 @media screen and (max-width: 1000px) {
 
   body {
-    grid-template: 'pageNav' 330px
-                   'pageContent' 1fr
+    grid-template: 'page-nav' 330px
+                   'page-content' 1fr
                    / 1fr;
   }
 
@@ -82,8 +119,8 @@ body {
 @media screen and (max-width: 500px) {
 
   body {
-    grid-template: 'pageNav' 1fr
-                   'pageContent' 3fr
+    grid-template: 'page-nav' 1fr
+                   'page-content' 3fr
                    / 1fr;
   }
 
