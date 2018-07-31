@@ -116,6 +116,11 @@ body {
   border-radius: 5px;
 }
 
+li.link:hover {
+  background-color: rgb(35, 42, 56);
+  border-left: 8px solid rgb(24, 145, 248);
+}
+
 .admin-nav {
   grid-area: admin-nav;
   height: 370px;
