@@ -46,7 +46,7 @@ h4 {
 
 .text {
   font-size: 22px;
-  font-weight: 400;
+  align-self: center;
 }
 
 /*==========[BLANKET STYLES]==========*/
@@ -248,7 +248,70 @@ li.nav:hover {
 
 /*==========[END SEARCH BAR STYLES]==========*/
 
+/*==========[BEGIN PAGE HEADER STYLES]==========*/
 
+.page-heading {
+  grid-area: page-heading;
+  align-self: end;
+  justify-self: center;
+  width: 85%;
+}
+
+h1 {
+  color: rgb(71, 73, 85);
+  font-size: 34px;
+}
+
+.page-heading p {
+  color: rgb(137, 146, 159);
+  display: grid;
+  grid-template: 1fr / 35px 1fr;
+  vertical-align: middle;
+  line-height: 25px;
+  margin-top: 12px;
+}
+
+.page-btns {
+  grid-area: page-btns;
+  display: inline-grid;
+  grid-template: 1fr / 110px 60px 60px 60px;
+  justify-self: center;
+}
+
+.page-btn {
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid rgb(206, 214, 222);
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.green-dot {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.wide-btn {
+  color: rgb(137, 146, 159);
+  width: 100px;
+}
+
+/*==========[END PAGE HEADER STYLES]==========*/
+
+/*==========[BEGIN CONTENT TAB STYLES]==========*/
+
+.content-tabs {
+  background-color: orange;
+  grid-area: content-tabs;
+}
+
+/*==========[END CONTENT TAB STYLES]==========*/
 
 /*==========[END PAGE NAVIGATION STYLES]==========*/
 
