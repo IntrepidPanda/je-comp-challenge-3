@@ -605,6 +605,10 @@ h1 {
 
 @media screen and (max-width: 600px) {
 
+  body {
+    height: auto;
+  }
+
   .page-nav {
     grid-template: 'menu-btn search-bar add-person add-calendar grid-btn' 1fr
                    'page-heading page-heading page-heading page-heading page-heading ' 1fr
