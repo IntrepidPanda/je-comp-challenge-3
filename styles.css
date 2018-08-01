@@ -349,6 +349,146 @@ h1 {
   margin: -10px;
 }
 
+.circles {
+  display: inline-block;
+}
+
+.bars {
+  display: inline-grid;
+  grid-template: 150px / repeat(14, 15px);
+  justify-content: space-evenly;
+  width: 435px;
+}
+
+.bar {
+  align-self: end;
+  border-radius: 5px;
+  height: 150px;
+  grid-row: 1;
+}
+
+.top {
+  background-color: rgb(60, 173, 179);
+  z-index: 5;
+}
+
+.bottom {
+  background-color: rgb(209, 222, 230);
+  z-index: 1;
+}
+
+.bar1 {
+  grid-column: 1;
+}
+
+.bar1.top {
+  height: 15px;
+}
+
+.bar2 {
+  grid-column: 2;
+}
+
+.bar2.top {
+  height: 75px;
+}
+
+.bar3 {
+  grid-column: 3;
+}
+
+.bar3.top {
+  height: 90px;
+}
+
+.bar4 {
+  grid-column: 4;
+}
+
+.bar4.top {
+  height: 110px;
+}
+
+.bar5 {
+  grid-column: 5;
+}
+
+.bar5.top {
+  height: 60px;
+}
+
+.bar6 {
+  grid-column: 6;
+}
+
+.bar6.top {
+  height: 75px;
+}
+
+.bar7 {
+  grid-column: 7;
+}
+
+.bar7.top {
+  height: 40px;
+}
+
+.bar8 {
+  grid-column: 8;
+}
+
+.bar8.top {
+  height: 15px;
+}
+
+.bar9 {
+  grid-column: 9;
+}
+
+.bar9.top {
+  height: 95px;
+}
+
+.bar10 {
+  grid-column: 10;
+}
+
+.bar10.top {
+  height: 110px;
+}
+
+.bar11 {
+  grid-column: 11;
+}
+
+.bar11.top {
+  height: 75px;
+}
+
+.bar12 {
+  grid-column: 12;
+}
+
+.bar12.top {
+  height: 60px;
+}
+
+.bar13 {
+  grid-column: 13;
+}
+
+.bar13.top {
+  height: 40px;
+}
+
+.bar14 {
+  grid-column: 14;
+}
+
+.bar14.top {
+  height: 25px;
+}
+
 /*==========[END PAGE CONTENT STYLES]==========*/
 
 /*==========[END TV STYLES]==========*/
