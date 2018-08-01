@@ -35,7 +35,7 @@ h3, h4 {
   font-weight: 700;
 }
 
-h1, h3, h4, p {
+h3, h4, p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -356,6 +356,7 @@ h1 {
   justify-self: center;
   margin-top: 40px;
   margin-left: 50px;
+  width: 580px;
 }
 
 .bars {
@@ -384,6 +385,10 @@ h1 {
 .top {
   background-color: rgb(60, 173, 179);
   z-index: 5;
+}
+
+.top:hover {
+  background-color: rgb(47, 153, 159);
 }
 
 .bottom {
@@ -529,6 +534,30 @@ h1 {
                    / 240px 1fr;
   }
 
+  .page-content {
+    grid-template: 'circles' auto
+                   'bars' auto
+                   / 1fr;
+  }
+
+  .circles {
+    height: 210px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .bars {
+    grid-area: bars;
+    height: 210px;
+    width: 495px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  
 }
 
 /*==========[END DESKTOP STYLES]==========*/
@@ -540,10 +569,10 @@ h1 {
 @media screen and (max-width: 1000px) {
 
   body {
-    grid-template: 'page-nav' 1fr
-                   'page-content' 3fr
+    grid-template: 'page-nav' auto
+                   'page-content' 1fr
                    / 1fr;
-    height: auto;
+    height: 100vh;
   }
 
   .site-nav {
@@ -574,7 +603,7 @@ h1 {
 
 /*==========[START MOBILE STYLES]==========*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
   .page-nav {
     grid-template: 'menu-btn search-bar add-person add-calendar grid-btn' 1fr
@@ -607,6 +636,20 @@ h1 {
 
   .page-btn {
     margin-top: 20px;
+  }
+
+  .page-heading {
+    margin-top: 20px;
+    text-align: center;
+    width: auto;
+  }
+
+  .page-heading p {
+    display: inline-block;
+  }
+
+  .circles {
+    margin-top: 10px;
   }
 
 }
