@@ -343,6 +343,12 @@ h1 {
   overflow: scroll;
 }
 
+.circle-graph {
+  height: 200px;
+  width: 200px;
+  margin: -10px;
+}
+
 /*==========[END PAGE CONTENT STYLES]==========*/
 
 /*==========[END TV STYLES]==========*/
