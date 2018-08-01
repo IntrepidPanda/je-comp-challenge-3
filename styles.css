@@ -35,6 +35,12 @@ h3, h4 {
   font-weight: 700;
 }
 
+h1, h3, h4, p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 h4 {
   font-weight: 400;
   margin: 40px 30px 15px 25px;
@@ -274,7 +280,7 @@ h1 {
 .page-btns {
   grid-area: page-btns;
   display: inline-grid;
-  grid-template: 1fr / 110px 60px 60px 60px;
+  grid-template: 1fr / 115px 65px 65px 65px;
   justify-self: center;
 }
 
@@ -364,13 +370,30 @@ h1 {
 @media screen and (max-width: 1000px) {
 
   body {
-    grid-template: 'page-nav' 330px
-                   'page-content' 1fr
+    grid-template: 'page-nav' 1fr
+                   'page-content' 3fr
                    / 1fr;
+    height: auto;
   }
 
   .site-nav {
     display: none;
+  }
+
+  .page-nav {
+    grid-template: 'menu-btn search-bar add-person add-calendar grid-btn' 1fr
+                 'page-heading page-heading page-btns page-btns page-btns' 1.3fr
+                 'content-tabs content-tabs content-tabs content-tabs content-tabs' 1fr
+                 / 100px 1fr 100px 100px 100px;
+  }
+
+  .page-btns {
+    grid-template: 1fr / 110px 60px 60px 60px;
+    justify-self: left;
+  }
+
+  .content-tabs {
+    justify-content: space-around;
   }
 
 }
@@ -383,10 +406,37 @@ h1 {
 
 @media screen and (max-width: 500px) {
 
-  body {
-    grid-template: 'page-nav' 1fr
-                   'page-content' 3fr
-                   / 1fr;
+  .page-nav {
+    grid-template: 'menu-btn search-bar add-person add-calendar grid-btn' 1fr
+                   'page-heading page-heading page-heading page-heading page-heading ' 1fr
+                   'page-btns page-btns page-btns page-btns page-btns' auto
+                   'content-tabs content-tabs content-tabs content-tabs content-tabs' auto
+                   / 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .search-bar p {
+    display: none;
+  }
+
+  .search-bar img {
+    margin: 0px auto;
+  }
+
+  .search-bar {
+    display: flex;
+    width: 100%;
+  }
+
+  .search-bar-btn {
+    width: 100%;
+  }
+
+  .page-btns {
+    justify-self: center;
+  }
+
+  .page-btn {
+    margin-top: 20px;
   }
 
 }
