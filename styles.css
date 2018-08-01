@@ -23,16 +23,16 @@
   width: 30px;
 }
 
-h3, h4 {
-  align-self: center;
-  font-size: 18px;
-  font-weight: 700;
-}
-
 li {
   display: grid;
   grid-template: 60px / auto 60%;
   justify-content: space-evenly;
+}
+
+h3, h4 {
+  align-self: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 h4 {
@@ -307,8 +307,22 @@ h1 {
 /*==========[BEGIN CONTENT TAB STYLES]==========*/
 
 .content-tabs {
-  background-color: orange;
   grid-area: content-tabs;
+  display: inline-grid;
+  grid-template: 1fr / repeat(7, auto);
+  justify-content: space-evenly;
+}
+
+.tab {
+  align-self: end;
+  border: 3px solid transparent;
+  color: rgb(137, 146, 159);
+  padding-bottom: 20px;
+}
+
+.tab:hover {
+  color: rgb(71, 73, 85);
+  border-bottom-color: rgb(24, 145, 248);
 }
 
 /*==========[END CONTENT TAB STYLES]==========*/
