@@ -746,10 +746,25 @@ h2 {
   font-size: 22px;
   font-weight: 700;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h2 img {
   margin-right: 10px;
+}
+
+.link-job {
+  grid-area: link-job;
+  border-bottom: 3px solid #c8d1db;
+}
+
+.embed {
+  grid-area: embed;
+  border-bottom: 3px solid #c8d1db;
+}
+
+.email {
+  grid-area: email;
 }
 
 /*==========[END PAGE CONTENT STYLES]==========*/
