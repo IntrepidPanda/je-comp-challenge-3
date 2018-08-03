@@ -601,15 +601,28 @@ hr {
 
   display: grid;
   grid-template: 'job-content user-interaction' auto
-                 / 1fr 400px;
-  margin: 20px 50px 50px 50px;
+                 / 1fr 300px;
+  grid-gap: 0 50px;
+
+  margin: 40px 60px 50px 60px;
 }
 
 .job-content {
   grid-area: job-content;
 
   display: grid;
-  grid-template: repeat(6, 100px) auto repeat(2, 100px) / 250px 400px;
+  grid-template: repeat(6, 100px) 200px repeat(2, 100px) / 1fr 2.5fr;
+}
+
+.user-interaction {
+  grid-area: user-interaction;
+
+  display: grid;
+  grid-template: 'social-btns' 250px
+                 'link-job' 260px
+                 'embed' 260px
+                 'email' 1fr
+                 / 1fr;
 }
 
 /*==========[END PAGE CONTENT STYLES]==========*/
