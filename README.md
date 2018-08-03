@@ -11,4 +11,4 @@ For this challenge, I set out to make each section responsive and clean before h
 
 ### My Version on Desktop:
 
-![Desktop Version](images/my-version.png "My Version")
+![Desktop Version](images/my-version-v2.png "My Version")
